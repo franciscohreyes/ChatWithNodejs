@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat using NodeJS & Socket.io</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h3 class="fw-bold">Chat using Nodejs, Socket.io</h3>
+            <form action="" method="post">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="text" id="email" class="form-control" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" class="form-control" placeholder="John Doe">
+                </div>
+                <input type="button" class="btn btn-primary" value="Enter" onclick="signIn()">
+            </form>
+        </div>
+        <!-- List messages -->
+        <div id="cont_messages">
+        </div>
+        <!-- End list messages -->
+    </div>
+    
+    <div class="container">
+        <div class="row mt-2">
+            <div class="mb-3">
+                <label for="toUser" class="form-label">Send message to user</label>
+                <input type="text" id="toUser" class="form-control" placeholder="John Doe">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="message" cols="30" rows="10" placeholder="Write a message..." required></textarea>
+            </div>
+            <div class="col-12">
+                <input type="button" id="send_message" class="btn btn-primary btn-sm float-end" value="Send" onclick="sendMessages()">
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "ChatWithNodejs",
+  "version": "1.0.0",
+  "description": "Chat using NodeJs with Socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon sockets/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscohreyes/ChatWithNodejs.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Socket.io",
+    "Bootstrap 5",
+    "Express",
+    "Nodemon"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franciscohreyes/ChatWithNodejs/issues"
+  },
+  "homepage": "https://github.com/franciscohreyes/ChatWithNodejs#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
